@@ -59,7 +59,6 @@ NSArray *storedDocs = [collection docsWithKeyedProperty:@"lastName" matching:@"l
 - Storing/updating docs without having to run a fetch request for existing docs
 
 ## Contact
-- Brent Kurzee
 - http://github.com/kurzee
 - http://twitter.com/kurzee
 

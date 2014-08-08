@@ -8,7 +8,7 @@ An experimental solution for quick and easy persistence of JSON docs pulled from
 Ideally, a swell CoreData implementation should always be used in iOS for persisting data and related objects. However, spinning up a new CoreData model/entities can be a draining process when rolling a new project (of course some people love the initial process).
 
 ## Overview
-CoreData wrapper to persist NSDictionaries serialized as JSON docs, without creating a CoreData model or related entities.
+CoreData wrapper to persist NSDictionaries serialized as JSON docs, without creating a CoreData model or related entities. Helpful for quick prototyping of an app that has a developing/changing model.
 
 Docs are associated with a key and can be retrieved via their key or queried against keyed properties within the doc. All methods are thread-safe.
 

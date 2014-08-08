@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="RBDocCollectionKeyedItem" representedClassName="RBDocCollectionKeyedItem" syncable="YES">
+        <attribute name="collection" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="json" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="keyedProperties" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RBDocCollectionKeyedProperty" inverseName="doc" inverseEntity="RBDocCollectionKeyedProperty" syncable="YES"/>
+    </entity>
+    <entity name="RBDocCollectionKeyedProperty" representedClassName="RBDocCollectionKeyedProperty" syncable="YES">
+        <attribute name="collection" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="jsonValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="doc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RBDocCollectionKeyedItem" inverseName="keyedProperties" inverseEntity="RBDocCollectionKeyedItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RBDocCollectionKeyedItem" positionX="0" positionY="0" width="128" height="103"/>
+        <element name="RBDocCollectionKeyedProperty" positionX="0" positionY="0" width="128" height="103"/>
+    </elements>
+</model>

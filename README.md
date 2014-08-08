@@ -10,7 +10,7 @@ Ideally, a swell CoreData implementation should always be used in iOS for persis
 ## Overview
 CoreData wrapper to persist NSDictionaries serialized as JSON docs, without creating a CoreData model or related entities.
 
-Docs are associated with a key and can be retrieved via their key or queried against keyed properties within the doc.
+Docs are associated with a key and can be retrieved via their key or queried against keyed properties within the doc. All methods are thread-safe.
 
 ## Usage
 ``` objective-c

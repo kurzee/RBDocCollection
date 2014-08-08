@@ -50,7 +50,7 @@ NSArray *storedDocs = [collection docsWithKeyedProperty:@"lastName" matching:@"l
 [collection save];
 ```
 ## Tips
-- Don't model your app off of NSDictionaries, istead always convert to actual modeled NSObject subclasses
+- Don't model your app off of NSDictionaries, instead always convert to actual modeled NSObject subclasses
 - Use this more as a cache for web data, rather than a persistence model
 - Don't use this as a placeholder for learning CoreData
 

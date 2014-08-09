@@ -51,8 +51,7 @@ NSArray *storedDocs = [collection docsWithKeyedProperty:@"lastName" matching:@"l
 ```
 ## Tips
 - Don't model your app off of NSDictionaries, instead always convert to actual modeled NSObject subclasses
-- Use this more as a cache for web data, rather than a persistence model
-- Don't use this as a placeholder for learning CoreData
+- This could be best used as more of a cache for web data rather than a database
 
 ## What's Next
 - Allowing NSPredicates when querying keyed properties
